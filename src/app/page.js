@@ -8,7 +8,7 @@ export default function Home() {
 
   useEffect(() => {
     console.log("i was called");
-    fetch("http://localhost:3000/api/syllabus")
+    fetch("https://trizwit-3y93k20de-mausoomi12.vercel.app/api/syllabus")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error(error));
